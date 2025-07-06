@@ -1,0 +1,62 @@
+body,html{
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  background: linear-gradient(to top, #774241,#523950,#14254C,#071129, #09132D);
+   height:100vh;
+}
+.sky{
+  position: relative;
+  width :100%;
+  height:100%;
+}
+#fireflies {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3; /* 星や芝生より上に */
+  pointer-events: none; /* クリックを通す */
+}
+#floatingText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  pointer-events: none;
+}
+
+
+
+#ground {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  z-index: 1;
+}
+#stars{
+  position:absolute;
+  top :0;
+  left:0;
+  width:100%;
+  height:100%;
+  filter: brightness(100) saturate(100%);
+}
+.couple{
+  position:absolute;
+  bottom: 40px;
+  left:50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.couple img{
+  width:120%;
+  height:auto;
+  opacity:0.9;
+  filter: brightness(1) saturate(5%);
+}
